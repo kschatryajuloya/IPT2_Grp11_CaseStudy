@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juloya Portfolio</title>
+    <script src="https://kit.fontawesome.com/976295ff45.js" crossorigin="anonymous"></script>
+    
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background: white;
+            color: #0e0c10;
+            margin: 0;
+            padding: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #header{
+            width: 100%;
+            height: 100vh;
+            background-image: url(website-images/bg-image.png);
+            background-size: cover;
+        }
+        .cont-1{
+            padding: 1px 5%;
+        }
+        nav{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav.sticky{
+            position: fixed;
+            background: white;
+            padding-top: 4px;
+            padding-bottom: 10px;
+            padding-right: 9%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: padding 1s;
+        }
+        .hk-logo{
+            width: 100px;
+            cursor: pointer;
+        }
+        nav ul li{
+            display: inline-block;
+            margin: 10px 35px;
+        }
+        nav ul li a{
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+            position: relative;
+        }
+        nav ul li a::after{
+            content: '';
+            width: 0;
+            height: 2px;
+            background: black;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+        nav ul li a:hover::after{
+            width: 100%;
+        }
+        .h-txt{
+            margin-top: 15%;
+            font-size: 30px;
+            font-weight: 200px;
+        }
+        .nm{
+            font-size: 70px;
+            margin-top: 20px;
+            font-weight: 550;
+        }
+        .down-cv-click{
+            display: inline-block;
+            margin: 30px auto;
+            width: fit-content;
+            border-radius: 5px;
+            border: 1px solid gray;
+            padding: 14px 50px;
+            text-decoration: none;
+            color: #0e0c10;
+            transition: background 0.5s;
+        }
+        .down-cv-click:hover{
+            background: gray;
+        }
+
+        #about{
+            padding: 130px 0;
+        }
+        .cont{
+            padding: 10px 5%;
+        }
+        .r{
+            display: flex;
+            justify-content: space-between;
+        }
+        .ab1{
+            flex-basis: 38%;
+        }
+        .ab-img{
+            width: 90%;
+            border-radius: 10px;
+        }
+        .ab2{
+            flex-basis: 60%;
+        }
+        .ab-li{
+            padding-top: 1px;
+        }
+        .ab-li li{
+            margin-top: 20px;
+        }
+        .st{
+            font-size: 60px;
+            font-weight: 600;
+            color: #0e0c10;
+        }
+        .soc{
+            padding-top: 1px;
+            padding-left: 600px;
+        }
+        .soc a{
+            text-decoration: none;
+            font-size: 30px;
+            margin-right: 15px;
+            color: black;
+            display: inline-block;
+        }
+        .gtkm{
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        #skills{
+            padding: 100px 0;
+        }
+        .skill-l{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+            margin-top: 50px;
+        }
+        .skill-l div{
+            background: #efe9e4;
+            padding: 40px;
+            font-size: 13px;
+            font-weight: 300;
+            border-radius: 10px;
+            transition: background 0.5s, transform 0.5s;
+        }
+        .skill-l i{
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+        .skill-l h2{
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        .skill-l a{
+            text-decoration: none;
+            color: #934713;
+            font-size: 12px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .skill-l div:hover{
+            background: #bf9984;
+            transform: translateY(-10px);
+        }
+        .wcid{
+            font-size: 13px;
+        }
+        .cr{
+            width: 100%;
+            text-align: center;
+            padding: 3px 0;
+            background: #efe9e4;
+            font-weight: 300;
+            margin-top: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="cont-1">
+            <nav id="navig">
+                <a href="#header"><img src="website-images/hk-logo.png" class="hk-logo" alt="HK LOGO"></a>
+                <ul id="navcont">
+                    <li>
+                        <a href="#header">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="h-txt">
+                <h1 class="nm"><span class="span">Kschatrya Juloya</span></h1>
+                <p>Front-End Web Developer</p>
+            </div>
+            <a href="#" download class="down-cv-click">Download CV</a>
+        </div>
+            </div>
+        </div>
+    </div>
+
+<!--About-->
+
+    <div id="about">
+        <div class="cont">
+            <div class="r">
+                <div class="ab1">
+                    <img class="ab-img" src="website-images/IMG_3547.jpeg" alt="About Me Img">
+                </div>
+                <div class="ab2">
+                    <h1 class="st">Get To Know Me</h1>
+                    <p> Hello! <span class="gtkm">I'm Hannah Kschatrya B. Juloya</span>.  I am a student-freelancer Web Developer, specialized in the Front End. 
+                        I also do Layout Designing, Graphic Designing, Video Editing, and Photography. Currently, I am still in 4th year 
+                        College, and looking for a part-time job as a Front-End Web Developer, Designer, Photographer.</p>
+                    <ul class="ab-li">
+                        <li><span class="gtkm">Age</span> — 21 years old</li>
+                        <li><span class="gtkm">Address</span> — Gerona, Tarlac, Philippines</li>
+                        <li><span class="gtkm">Institution</span> — Tarlac State University</li>
+                        <li><span class="gtkm">Department</span> — College of Computer Studies</li>
+                        <li><span class="gtkm">Course</span> — Bachelor of Science in Information Technology</li>
+                        <li><span class="gtkm">Specialization</span> — Web and Mobile Application</li>
+                        <li><span class="gtkm">Current Section</span> — WMA-4B</li>
+                    </ul>
+                    <div class="soc">
+                        <a href="https://web.facebook.com/profile.php?id=100006850815061"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/kschatrya"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/kschatrya"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div id="skills">
+                <h1 class="st">What I Can Do</h1>
+                <div class="skill-l">
+                    <div>
+                        <h2>Web Design</h2>
+                        <p class="wcid">Mastery in HTML, CSS, PHP, and JAVASCRIPT</p>
+                    </div>
+                    <div>
+                        <h2>Web Layout Design</h2>
+                        <p class="wcid">Graphic Layout Designs. Mastery in using various graphic editors.</p>
+                    </div>
+                    <div>
+                        <h2>Multimedia Arts</h2>
+                        <p class="wcid">Have experience in photography, videography, and multimedia editing.</p>
+                    </div>
+                </div>
+                <div class="skill-l">
+                    <div>
+                        <h2>Mobile Design</h2>
+                        <p class="wcid">Mastery in HTML, CSS, PHP, and JAVASCRIPT</p>
+                    </div>
+                    <div>
+                        <h2>Mobile Layout Design</h2>
+                        <p class="wcid">Graphic Layout Designs. Mastery in using various graphic editors.</p>
+                    </div>
+                    <div>
+                        <h2>Creative Contents</h2>
+                        <p class="wcid">Have experience in creative writing, and content writing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cr">
+        <p>All Rights Reserved. HKBJ</p>
+    </div>
+    
+
+    <script>
+        var navig = document.getElementById("navig");
+        var navcont = document.getElementById("navcont");
+
+        window.onscroll = function(){
+            if(window.pageYOffset >= navcont.offsetTop){
+                navig.classList.add("sticky");
+            }
+            else{
+                navig.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>
